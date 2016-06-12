@@ -23,7 +23,7 @@
 	    				{% for i in news %}
 					        <div class="well">
 					          <h4>Latest News</h4>
-						          <p><a href="#"><img src="{{ i.photo }}" class="img-responsive"></a></p>
+						          <p><a href="/projectsite/page1/{{ i.nid }}"><img src="{{ i.photo }}" class="img-responsive"></a></p>
 						          <h5 class="title text-center"><a href="/projectsite/page1/{{ i.nid }}">{{ i.heading }}</a></h5>
 					        </div><hr>
         				{% endfor %}
@@ -105,8 +105,8 @@
 					    <div class="row">
 					   {% for i in news %}
 						    <div class="col-md-4">
-							          <p><a href="#"><img src="{{ i.photo }}" class="img-responsive"></a></p>
-							          <h5 class="title text-center"><a href="/projectsite/page1/{{ i.nid }}">{{ i.heading }}</a></h5>
+					          <p><a href="/projectsite/page1/{{ i.nid }}"><img src="{{ i.photo }}" class="img-responsive"></a></p>
+					          <h5 class="title text-center"><a href="/projectsite/page1/{{ i.nid }}">{{ i.heading }}</a></h5>
 						    </div>
 					    {% endfor %}
 					    
@@ -156,7 +156,7 @@
     <!-- /.container -->
 
 <!-- jQuery -->
-<script   src="https://code.jquery.com/jquery-3.0.0.min.js"   integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="   crossorigin="anonymous"></script>
+<script   src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="   crossorigin="anonymous"></script>
 <!-- Bootstrap Core JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 

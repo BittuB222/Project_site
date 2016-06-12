@@ -87,7 +87,7 @@
         {% for i in news %}
         <div class="well">
           <h4>Latest News</h4>
-	          <p><a href="#"><img src="{{ i.photo }}" class="img-responsive"></a></p>
+	          <p><a href="/projectsite/page1/{{ i.nid }}"><img src="{{ i.photo }}" class="img-responsive"></a></p>
 	          <h5 class="title text-center"><a href="/projectsite/page1/{{ i.nid }}">{{ i.heading }}</a></h5>
         </div><hr>
         {% endfor %}
@@ -150,7 +150,7 @@
       <hr> -->
       {% for i in news %}
 		<div class="row">
-    		<div class="col-sm-4"><a href="#"><img class="img-responsive img-thumbnail" src="{{ i.photo }}" alt=""></a></div>
+    		<div class="col-sm-4"><a href="/projectsite/page1/{{ i.nid }}"><img class="img-responsive img-thumbnail" src="{{ i.photo }}" alt=""></a></div>
         		<div class="col-sm-8">
 		          <h3 class="title"><a href="/projectsite/page1/{{ i.nid }}">{{ i.heading }}</a></h3>
 		          <p class="text-muted"><span class="glyphicon glyphicon-time"></span> Last updated on: June 11, 2016 at 22:55 IST</p>
@@ -205,7 +205,7 @@
     <div class="row">
     {% for i in news %}
     <div class="col-md-4">
-	          <p><a href="#"><img src="{{ i.photo }}" class="img-responsive"></a></p>
+	          <p><a href="/projectsite/page1/{{ i.nid }}"><img src="{{ i.photo }}" class="img-responsive"></a></p>
 	          <h5 class="title text-center"><a href="/projectsite/page1/{{ i.nid }}">{{ i.heading }}</a></h5>
     </div>
     {% endfor %}
